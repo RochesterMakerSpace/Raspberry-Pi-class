@@ -1,7 +1,7 @@
-import RPi.GPIO as IO            # helps us use GPIO’s of PI
+import RPi.GPIO as IO            # helps us use GPIOâ€™s of PI
 import time                      # time to provide delays in program
 IO.setwarnings(False)            # do not show any warnings
-IO.setmode (IO.BCM)              # programming the GPIO by BCM pin numbers. (PIN35 as ‘GPIO19’)
+IO.setmode (IO.BCM)              # GPIO by BCM numbers e.g. (PIN35 as â€˜GPIO19â€™)
 IO.setup(19,IO.OUT)              # initialize GPIO19 as an output
 p = IO.PWM(19,100)               # GPIO19 as PWM output, with 100Hz frequency
 p.start(0)                       # generate PWM signal with 0% duty cycle
