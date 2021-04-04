@@ -2,7 +2,9 @@ from gpiozero import LED
 from gpiozero.pins.pigpio import PiGPIOFactory
 from time import sleep
 
-factory = PiGPIOFactory(host='192.168.2.221')
+# Change localhost to Raspberry Pi host and run
+# this program on a remote computer
+factory = PiGPIOFactory(host='localhost')
 led = LED(21, pin_factory=factory)
 
 try:

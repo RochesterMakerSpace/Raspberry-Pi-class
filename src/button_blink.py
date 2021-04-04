@@ -12,4 +12,4 @@ print('You pushed me')
 led.on()
 sleep(3)
 led.off()
-
+led.close()

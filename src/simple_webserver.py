@@ -3,7 +3,7 @@ import os
 from time import sleep
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-host_name = '192.168.2.90'  # Change this to your Raspberry Pi IP address
+host_name = 'localhost'  # Change this to your Raspberry Pi IP address
 host_port = 8000
 
 led_pin = 21 # use a variable for the pin number
@@ -77,3 +77,4 @@ if __name__ == '__main__':
         http_server.serve_forever()
     except KeyboardInterrupt:
         http_server.server_close()
+        GPIO.cleanup()
