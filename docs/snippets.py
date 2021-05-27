@@ -25,10 +25,18 @@ print("I don't like ", end="")
 print("newlines")
 
 # Data type: List
-grocery_list = ['Juice', 'Tomatoes', 'Potatos', 'Bananas']
+grocery_list = ['Juice', 'Tomatoes', 'Potatoes', 'Bananas']
 print(grocery_list)
-print(grocery_list[0:2])
+print(grocery_list[0:2])  # 0 to 1 element (2 is non-inclusive)
 print(len(grocery_list))
+print(grocery_list[-2:])  # from next to last to end
+print(grocery_list[::-1]) # reverse list
+# [start:end(non-inclusive):step]
+
+# In shell window:
+# grocery_list = ['Juice', 'Tomatoes', 'Potatoes', 'Bananas']
+# dir(grocery_list)
+# help(grocery_list.append)
 
 # Data type: Dictionary
 super_villains = {'Fiddler' : 'Isaac Bowin',
@@ -54,14 +62,14 @@ else:
 # Conditionals: logical operators
 if temp_f_int >= 30 and temp_f_int <= 100:
     print("just right")
-    
+
 # Looping: For loop
 for x in range(0,10):
     print(x, ' ', end='')
 print('\n')
 for y in grocery_list:
     print(y)
-    
+
 # Looping: While
 random_num = random.randrange(0,100)
 while(random_num != 15):
@@ -83,7 +91,6 @@ test_file = open("test.txt", "r+")
 text_in_file = test_file.read()
 print(text_in_file)
 '''
-
 
 
 
