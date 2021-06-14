@@ -83,13 +83,26 @@ def addNum(first, second):
 print(addNum(1,4))
 
 # File I/O: open and write
-test_file = open("test.txt", "wb")
+test_file = open("test.txt", "wb") # open for write binary
 test_file.write(bytes("Write me to the file\n", "UTF-8"))
 test_file.close()
 # File I/O: open and read
-test_file = open("test.txt", "r+")
+test_file = open("test.txt", "r+") # open for reading and writing
 text_in_file = test_file.read()
 print(text_in_file)
+
+# pickle (serialize/unserialize to file (or string)
+import pickle
+
+with open("test.pkl", 'wb') as f:
+    pickle.dump(grocery_list,f)
+    pickle.dump(super_villains,f)
+with open("test.pkl", 'rb') as f2:
+    a = pickle.load(f2)
+    b = pickle.load(f2)
+print(a)
+print(b)
+
 '''
 
 
