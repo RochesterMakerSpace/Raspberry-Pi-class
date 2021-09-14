@@ -4,9 +4,15 @@ import random
 multiline comment
 '''
 
-# Variable, Data type: string
+# Variable, Data type: string, integer, float, boolean
 my_name = "John"
 print(my_name)
+my_int = 1
+print(my_int)
+my_float = 3.14
+print(my_float)
+my_bool = True
+print(my_bool)
 
 '''
 # Arithmetic operators
@@ -18,13 +24,15 @@ print("5 % 2 =", 5%2)
 print("5 ** 2 = ", 5**2)
 print("5 // 2 = ", 5//2)
 
-# String formating
+# User input
 my_age = 40
+
+# String formating
 print(f"Hello, my name is {my_name}, I am {my_age} years old")
 print("I don't like ", end="")
 print("newlines")
 
-# Data type: List
+# Collection type: List
 grocery_list = ['Juice', 'Tomatoes', 'Potatoes', 'Bananas']
 print(grocery_list)
 print(grocery_list[0:2])  # 0 to 1 element (2 is non-inclusive)
@@ -38,7 +46,7 @@ print(grocery_list[::-1]) # reverse list
 # dir(grocery_list)
 # help(grocery_list.append)
 
-# Data type: Dictionary
+# Collection type: Dictionary
 super_villains = {'Fiddler' : 'Isaac Bowin',
                  'Captain Cold' : 'Leonard Snart',
                  'Weather Wizard' : 'Mark Mardon',
