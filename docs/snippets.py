@@ -5,16 +5,16 @@ multiline comment
 '''
 
 # Variable, Data type: string, integer, float, boolean
-my_name = "John"
-print(my_name)
+my_string = "John"
+print(my_string)
 my_int = 1
 print(my_int)
 my_float = 3.14
 print(my_float)
 my_bool = True
 print(my_bool)
+''' 
 
-'''
 # Arithmetic operators
 print("5 + 2 =", 5+2)
 print("5 - 2 =", 5-2)
@@ -28,7 +28,7 @@ print("5 // 2 = ", 5//2)
 my_age = 40
 
 # String formating
-print(f"Hello, my name is {my_name}, I am {my_age} years old")
+print(f"Hello, my name is {my_string}, I am {my_age} years old")
 print("I don't like ", end="")
 print("newlines")
 
